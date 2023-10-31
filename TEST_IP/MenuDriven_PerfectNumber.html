@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+         console.log(`1.To find greatest among three numbers.
+2. To display even numbers less than 20.
+3.To calculate area of a triangle.
+4.To find if the entered year is a leap year or not
+5.To display a table of number n.
+6.To find the entered number is a perfect number or not.`);
+      var ch= Number(prompt(" Enter the choice:"));
+      switch(ch)
+      { 
+        case 1: var n1= Number(prompt(" Enter value of n1:"));
+               var n2= Number(prompt(" Enter value of n2:"));
+               var n3= Number(prompt(" Enter value of n3:"));
+            if(n1>n2 && n1>n3){
+                console.log(n1+" is greater");
+               }
+             else if(n2>n1 && n2>n3){
+               console.log(n2+" is greater");
+            }
+            else if(n3>n1 && n3>n2){
+               console.log(n3+" is greater");
+            }
+        break;
+        case 2: var i=0;
+                for(i=0 ;i<20;i++){
+                    if(i%2==0){
+                        console.log(i);
+                    }
+                }
+        break;
+        case 3: var yr =Number(prompt("Enter leap year"));
+                if(yr%4==0 && yr%100!=0 || yr%400==0){
+                    console.log("Ebtered year is leap year");
+                }
+                else {
+                    console.log("Not a Lep year");
+                }
+        break;
+        case 4: var breadth1= Number(prompt("Enter breadth of triangle"));
+                var height1= Number(prompt("Enter height of triangle"));
+                var area= 0.5 *breadth1*height1;
+                console .log("Area of triangle is:"+area);
+        break;
+        case 5: var n1 = Number(prompt("Enter rhe number of table have to ben display:"));
+                var i=1;
+                for(i=1;i<11;i++){
+                    console.log(n1+"X"+i+"="+i*n1);
+                }
+        break;
+        case 6: var n= Number(prompt("Enter a number"));
+        var i=1; 
+        var sum=0;   
+        while(i <n)  
+        {  
+        if(n % i == 0)  
+        {  
+          sum = sum + i;  
+        } 
+        i++;  
+        } 
+       if(sum==n)  
+       {  
+       console.log(n+" is a perfect number.");  
+       } //end of if  
+      else { 
+      console.log(n+" is not a perfect number.");   
+      }  
+        break;
+
+
+    }
+    </script>
+</body>
+</html>
